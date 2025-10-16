@@ -1,0 +1,137 @@
+/*
+** =============================
+** == Main Rules
+** =============================
+** #ffffff => White
+** #000000 => Black
+** #006699 => Dark Blue
+** #6699cc => Dark Skyblue
+** #ffcc00 => Gold
+*/
+body { /* Body main rules */
+  font-family: Calibri, "Tahoma", Sans-Serif;
+  letter-spacing: .75px;
+}
+
+.grayscale-100 {
+  /* Grayscale none */
+  filter: grayscale(100%);
+}
+
+.grayscale-50 {
+  /* Graysacle filter half */
+  filter: grayscale(50%);
+}
+
+textarea {
+  /* Main textarea height */
+  height: 200px !important;
+}
+
+.s-150 {
+  /* Box size of 150px */
+  width: 150px;
+}
+
+.s-200 {
+  /* Box size of 200px */
+  width: 200px;
+}
+
+.btn-outline-gold {
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+}
+
+/*
+** =============================
+** == Header Rules
+** =============================
+*/
+
+.header,
+.header-small { /* Main Headers Shared Props */
+  position: relative;
+  background: linear-gradient(145deg, #08283880 10%, #08283840 90%),
+    url("../imgs/cover.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.header { /* Home Header Height */
+  height: 550px;
+}
+
+.header-small { /* Other Pages Header Aspects */
+  background-position: top center;
+  height: 180px;
+}
+
+.header .navbar,
+.header .caption,
+.header-small .navbar { /* Headers Navbar & Caption Aspect */
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.header-small .caption { /* Hide Caption If The Current Page Is Not Home Page */
+  display: none;
+}
+
+.header .navbar,
+.header-small .navbar { /* Move The Navbar Container From Browser Top Edge */
+  top: 40px;
+}
+
+.header .navbar .nav-link,
+.header-small .navbar .nav-link {
+    color: white;
+}
+
+.header .navbar .nav-link.active,
+.header-small .navbar .nav-link.active {
+    color: #ffcc00;
+}
+
+@media (max-width: 991.98px) { /* Navbar Aspects In Smart Phones & Tablets */
+  .header .navbar .collapse,
+  .header-small .navbar .collapse {
+    background: #082838a9;
+    margin-top: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    box-shadow: 0 3px 10px -6px #006699fe;
+  }
+
+  .header .navbar .collapse .nav-link,
+  .header-small .navbar .collapse .nav-link {
+    color: #ffcc00;
+    padding: .35rem 1rem;
+    font-size: medium;
+  }
+
+  .header .navbar .collapse .nav-link:not(.active):hover,
+  .header-small .navbar .collapse .nav-link:not(.active):hover {
+    animation: navbar-hover-collapsed .3s both ease-in-out;
+  }
+
+  @keyframes navbar-hover-collapsed {
+    0% {
+        color: #ffcc00;
+    } 
+    100% {
+        color: #fff;
+    }
+  }
+
+  .header .navbar .collapse .nav-link.active,
+  .header-small .navbar .collapse .nav-link.active {
+    color: #fff;
+  }
+}
+
+.header .caption { /* Move The Navbar Caption Far Away From The Browser Edge */
+  top: 300px;
+}
