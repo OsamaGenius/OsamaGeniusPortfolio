@@ -228,4 +228,52 @@ textarea {
         filter: grayscale(0);
     }
 }
+
+/*
+** =============================
+** == Skills Rules
+** =============================
+*/
+
+.skills { /* Skills Section Background Aspects */
+    background: linear-gradient(to right, #ffffffea 0%, #fdfdfdce 100%), url('../imgs/skills.png');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    filter: grayscale(50%);
+}
+  
+.skills label { /* Hide The Progress Bar Upper Label [ Percentage Label ] */
+    display: none;
+}
+
+.skills .progress-label { /* The Hidden Label Aspects [ Percentage Label ] */
+    position: absolute;
+    left: 0;
+    top: -22px;
+    background-color: #ff000090;
+    color: red;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.skills .progress-label::after { /* The Hidden Label Aspects [ Percentage Label ] */
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #ff000050;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 6px;
+    top: 16px;
+}
+
+.skills .progress { /* Progress Bar Aspects */
+    height: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 5px -1px #006699ae;
+}
   
