@@ -154,3 +154,33 @@ textarea {
 .header .caption { /* Move The Navbar Caption Far Away From The Browser Edge */
   top: 300px;
 }
+
+/*
+** =============================
+** == Social Links Rules
+** =============================
+*/
+
+.social-links { /* Section Main BG */
+    background-color: #fff;
+}
+
+.social-links img { /* Section Img Aspects */
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%);
+}
+
+.social-links img:hover { /* Rmove Grayscale filter on hovering over each Img */
+    animation: social-links-grayscale .3s ease-in-out both;
+}
+
+@keyframes social-links-grayscale { /* Grayscale filter animation */
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0);
+    }
+}
+  
