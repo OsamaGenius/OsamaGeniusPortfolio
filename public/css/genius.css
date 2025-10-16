@@ -39,6 +39,16 @@ textarea {
   width: 200px;
 }
 
+.s-300 {
+    /* Box size of 300px */
+    width: 300px;
+  }
+
+  .s-400 {
+    /* Box size of 400px */
+    width: 400px;
+  }
+    
 .btn-outline-gold {
   color: #ffcc00;
   border: 1px solid #ffcc00;
