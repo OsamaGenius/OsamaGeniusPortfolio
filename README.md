@@ -1,0 +1,2 @@
+# OsamaGenius Portfolio
+This repo representing my portfolio that contains all of templates, projects, and designing works, in other word this repo is a big door to show my skills and knowledge.
