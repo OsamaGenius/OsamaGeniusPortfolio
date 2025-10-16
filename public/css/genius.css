@@ -43,6 +43,11 @@ textarea {
     border: 1px solid #ffcc00;
 }
 
+.btn-outline-gold:hover {
+    color: #000;
+    background: #ffcc00;
+}
+
 /*
 ** =============================
 ** == Header Rules
@@ -52,7 +57,7 @@ textarea {
 .header,
 .header-small { /* Main Headers Shared Props */
   position: relative;
-  background: linear-gradient(145deg, #08283880 10%, #08283840 90%),
+  background: linear-gradient(145deg, #082838a9 10%, #08283860 90%),
     url("../imgs/cover.png");
   background-size: cover;
   background-position: center center;
@@ -86,18 +91,32 @@ textarea {
 }
 
 .header .navbar .nav-link,
-.header-small .navbar .nav-link {
+.header-small .navbar .nav-link { /* Main navbar links color */
     color: white;
 }
 
+.header .navbar .nav-link:not(.active):hover,
+.header-small .navbar .nav-link:not(.active):hover { /* Hover over navbar links to activate animation except the active link */
+    animation: navbar-hover .3s both ease-in-out;
+}
+
+@keyframes navbar-hover { /* Big screens navbar links animation on hover */
+    0% {
+        color: white;
+    }
+    100% {
+        color: #ffcc00;
+    }
+}
+
 .header .navbar .nav-link.active,
-.header-small .navbar .nav-link.active {
+.header-small .navbar .nav-link.active { /* Active navbar link color */
     color: #ffcc00;
 }
 
 @media (max-width: 991.98px) { /* Navbar Aspects In Smart Phones & Tablets */
   .header .navbar .collapse,
-  .header-small .navbar .collapse {
+  .header-small .navbar .collapse { /* Collapsed box aspects */
     background: #082838a9;
     margin-top: 0.25rem;
     border-bottom-right-radius: 0.25rem;
@@ -106,18 +125,18 @@ textarea {
   }
 
   .header .navbar .collapse .nav-link,
-  .header-small .navbar .collapse .nav-link {
+  .header-small .navbar .collapse .nav-link { /* Collapsed navbar links Aspects */
     color: #ffcc00;
     padding: .35rem 1rem;
     font-size: medium;
   }
 
   .header .navbar .collapse .nav-link:not(.active):hover,
-  .header-small .navbar .collapse .nav-link:not(.active):hover {
+  .header-small .navbar .collapse .nav-link:not(.active):hover { /* Hover Collapsed Links */
     animation: navbar-hover-collapsed .3s both ease-in-out;
   }
 
-  @keyframes navbar-hover-collapsed {
+  @keyframes navbar-hover-collapsed { /* Collapsed Links Animation */
     0% {
         color: #ffcc00;
     } 
@@ -127,7 +146,7 @@ textarea {
   }
 
   .header .navbar .collapse .nav-link.active,
-  .header-small .navbar .collapse .nav-link.active {
+  .header-small .navbar .collapse .nav-link.active { /* Active collapsed link color */
     color: #fff;
   }
 }
