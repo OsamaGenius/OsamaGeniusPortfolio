@@ -8,9 +8,10 @@
 ** #6699cc => Dark Skyblue
 ** #ffcc00 => Gold
 */
-body { /* Body main rules */
+body {
+  /* Body main rules */
   font-family: Calibri, "Tahoma", Sans-Serif;
-  letter-spacing: .75px;
+  letter-spacing: 0.75px;
 }
 
 .grayscale-100 {
@@ -39,13 +40,13 @@ textarea {
 }
 
 .btn-outline-gold {
-    color: #ffcc00;
-    border: 1px solid #ffcc00;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
 }
 
 .btn-outline-gold:hover {
-    color: #000;
-    background: #ffcc00;
+  color: #000;
+  background: #ffcc00;
 }
 
 /*
@@ -54,45 +55,51 @@ textarea {
 ** =============================
 */
 
-.title { /* Title Main Box */
-    margin: 0 auto;
-    width: fit-content;
-}
-  
-.title h3 { /* Title Header */
-    color: #033a56;
+.title {
+  /* Title Main Box */
+  margin: 0 auto;
+  width: fit-content;
 }
 
-.title .decoration {  /* Title Line Parent */
-    position: relative;
-    width: 100%;
+.title h3 {
+  /* Title Header */
+  color: #033a56;
+}
+
+.title .decoration {
+  /* Title Line Parent */
+  position: relative;
+  width: 100%;
 }
 
 .title .decoration .upline,
-.title .decoration .downline { /* Title Up & Down Lines Shared Props */
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin-bottom: 3px;
-    background: #033a56;
+.title .decoration .downline {
+  /* Title Up & Down Lines Shared Props */
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 3px;
+  background: #033a56;
 }
 
-.title .decoration .downline { /* Title DownLine Props */
-    width: 80%;
-    margin: 0 auto 0;
+.title .decoration .downline {
+  /* Title DownLine Props */
+  width: 80%;
+  margin: 0 auto 0;
 }
 
-.title .decoration .icon { /* Title Shape Props */
-    position: absolute;
-    top: -6px;
-    left: 48%;
-    width: 20px;
-    height: 20px;
-    background: #033a56;
-    border: 3px solid snow;
-    transform: rotate(45deg) translate3d(0, 0, 0);
+.title .decoration .icon {
+  /* Title Shape Props */
+  position: absolute;
+  top: -6px;
+  left: 48%;
+  width: 20px;
+  height: 20px;
+  background: #033a56;
+  border: 3px solid snow;
+  transform: rotate(45deg) translate3d(0, 0, 0);
 }
-  
+
 /*
 ** =============================
 ** == Header Rules
@@ -100,7 +107,8 @@ textarea {
 */
 
 .header,
-.header-small { /* Main Headers Shared Props */
+.header-small {
+  /* Main Headers Shared Props */
   position: relative;
   background: linear-gradient(145deg, #082838a9 10%, #08283860 90%),
     url("../imgs/cover.png");
@@ -109,59 +117,70 @@ textarea {
   width: 100%;
 }
 
-.header { /* Home Header Height */
+.header {
+  /* Home Header Height */
   height: 550px;
 }
 
-.header-small { /* Other Pages Header Aspects */
+.header-small {
+  /* Other Pages Header Aspects */
   background-position: top center;
   height: 180px;
 }
 
 .header .navbar,
 .header .caption,
-.header-small .navbar { /* Headers Navbar & Caption Aspect */
+.header-small .navbar {
+  /* Headers Navbar & Caption Aspect */
   position: absolute;
   width: 100%;
   left: 0;
 }
 
-.header-small .caption { /* Hide Caption If The Current Page Is Not Home Page */
+.header-small .caption {
+  /* Hide Caption If The Current Page Is Not Home Page */
   display: none;
 }
 
 .header .navbar,
-.header-small .navbar { /* Move The Navbar Container From Browser Top Edge */
+.header-small .navbar {
+  /* Move The Navbar Container From Browser Top Edge */
   top: 40px;
 }
 
 .header .navbar .nav-link,
-.header-small .navbar .nav-link { /* Main navbar links color */
-    color: white;
+.header-small .navbar .nav-link {
+  /* Main navbar links color */
+  color: white;
 }
 
 .header .navbar .nav-link:not(.active):hover,
-.header-small .navbar .nav-link:not(.active):hover { /* Hover over navbar links to activate animation except the active link */
-    animation: navbar-hover .3s both ease-in-out;
+.header-small .navbar .nav-link:not(.active):hover {
+  /* Hover over navbar links to activate animation except the active link */
+  animation: navbar-hover 0.3s both ease-in-out;
 }
 
-@keyframes navbar-hover { /* Big screens navbar links animation on hover */
-    0% {
-        color: white;
-    }
-    100% {
-        color: #ffcc00;
-    }
+@keyframes navbar-hover {
+  /* Big screens navbar links animation on hover */
+  0% {
+    color: white;
+  }
+  100% {
+    color: #ffcc00;
+  }
 }
 
 .header .navbar .nav-link.active,
-.header-small .navbar .nav-link.active { /* Active navbar link color */
-    color: #ffcc00;
+.header-small .navbar .nav-link.active {
+  /* Active navbar link color */
+  color: #ffcc00;
 }
 
-@media (max-width: 991.98px) { /* Navbar Aspects In Smart Phones & Tablets */
+@media (max-width: 991.98px) {
+  /* Navbar Aspects In Smart Phones & Tablets */
   .header .navbar .collapse,
-  .header-small .navbar .collapse { /* Collapsed box aspects */
+  .header-small .navbar .collapse {
+    /* Collapsed box aspects */
     background: #082838a9;
     margin-top: 0.25rem;
     border-bottom-right-radius: 0.25rem;
@@ -170,33 +189,38 @@ textarea {
   }
 
   .header .navbar .collapse .nav-link,
-  .header-small .navbar .collapse .nav-link { /* Collapsed navbar links Aspects */
+  .header-small .navbar .collapse .nav-link {
+    /* Collapsed navbar links Aspects */
     color: #ffcc00;
-    padding: .35rem 1rem;
+    padding: 0.35rem 1rem;
     font-size: medium;
   }
 
   .header .navbar .collapse .nav-link:not(.active):hover,
-  .header-small .navbar .collapse .nav-link:not(.active):hover { /* Hover Collapsed Links */
-    animation: navbar-hover-collapsed .3s both ease-in-out;
+  .header-small .navbar .collapse .nav-link:not(.active):hover {
+    /* Hover Collapsed Links */
+    animation: navbar-hover-collapsed 0.3s both ease-in-out;
   }
 
-  @keyframes navbar-hover-collapsed { /* Collapsed Links Animation */
+  @keyframes navbar-hover-collapsed {
+    /* Collapsed Links Animation */
     0% {
-        color: #ffcc00;
-    } 
+      color: #ffcc00;
+    }
     100% {
-        color: #fff;
+      color: #fff;
     }
   }
 
   .header .navbar .collapse .nav-link.active,
-  .header-small .navbar .collapse .nav-link.active { /* Active collapsed link color */
+  .header-small .navbar .collapse .nav-link.active {
+    /* Active collapsed link color */
     color: #fff;
   }
 }
 
-.header .caption { /* Move The Navbar Caption Far Away From The Browser Edge */
+.header .caption {
+  /* Move The Navbar Caption Far Away From The Browser Edge */
   top: 300px;
 }
 
@@ -206,27 +230,31 @@ textarea {
 ** =============================
 */
 
-.social-links { /* Section Main BG */
-    background-color: #fff;
+.social-links {
+  /* Section Main BG */
+  background-color: #fff;
 }
 
-.social-links img { /* Section Img Aspects */
-    width: 50px;
-    height: 50px;
+.social-links img {
+  /* Section Img Aspects */
+  width: 50px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+.social-links img:hover {
+  /* Rmove Grayscale filter on hovering over each Img */
+  animation: social-links-grayscale 0.3s ease-in-out both;
+}
+
+@keyframes social-links-grayscale {
+  /* Grayscale filter animation */
+  0% {
     filter: grayscale(100%);
-}
-
-.social-links img:hover { /* Rmove Grayscale filter on hovering over each Img */
-    animation: social-links-grayscale .3s ease-in-out both;
-}
-
-@keyframes social-links-grayscale { /* Grayscale filter animation */
-    0% {
-        filter: grayscale(100%);
-    }
-    100% {
-        filter: grayscale(0);
-    }
+  }
+  100% {
+    filter: grayscale(0);
+  }
 }
 
 /*
@@ -235,45 +263,60 @@ textarea {
 ** =============================
 */
 
-.skills { /* Skills Section Background Aspects */
-    background: linear-gradient(to right, #ffffffea 0%, #fdfdfdce 100%), url('../imgs/skills.png');
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    filter: grayscale(50%);
-}
-  
-.skills label { /* Hide The Progress Bar Upper Label [ Percentage Label ] */
-    display: none;
+.skills {
+  /* Skills Section Background Aspects */
+  background: linear-gradient(to right, #ffffffea 0%, #fdfdfdce 100%),
+    url("../imgs/skills.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  filter: grayscale(50%);
 }
 
-.skills .progress-label { /* The Hidden Label Aspects [ Percentage Label ] */
-    position: absolute;
-    left: 0;
-    top: -22px;
-    background-color: #ff000090;
-    color: red;
-    padding: 3px;
-    border-radius: 10px;
-    font-size: 14px;
-    text-align: center;
+.skills label {
+  /* Hide The Progress Bar Upper Label [ Percentage Label ] */
+  display: none;
 }
 
-.skills .progress-label::after { /* The Hidden Label Aspects [ Percentage Label ] */
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: #ff000050;
-    position: absolute;
-    transform: rotate(45deg);
-    right: 6px;
-    top: 16px;
+.skills .progress-label {
+  /* The Hidden Label Aspects [ Percentage Label ] */
+  position: absolute;
+  left: 0;
+  top: -22px;
+  background-color: #ff000090;
+  color: red;
+  padding: 3px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
-.skills .progress { /* Progress Bar Aspects */
-    height: 20px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 0 5px -1px #006699ae;
+.skills .progress-label::after {
+  /* The Hidden Label Aspects [ Percentage Label ] */
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #ff000050;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 6px;
+  top: 16px;
 }
-  
+
+.skills .progress {
+  /* Progress Bar Aspects */
+  height: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 5px -1px #006699ae;
+}
+
+/*
+** =============================
+** == Works Section Rules
+** =============================
+*/
+.works .card {
+  /* Adding Outline Shadow At Card Box */
+  box-shadow: 0 0 6px -2px #006699ae !important;
+}
