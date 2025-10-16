@@ -320,3 +320,43 @@ textarea {
   /* Adding Outline Shadow At Card Box */
   box-shadow: 0 0 6px -2px #006699ae !important;
 }
+
+/*
+** =============================
+** == Story Rules
+** =============================
+*/
+
+.story .timeline {
+  /* Left Line In Story Timeline Color */
+  border-color: #033a56 !important;
+}
+
+.story .timeline .circle {
+  /* The Number Circle Aspects */
+  position: absolute;
+  top: 15px;
+  left: -40px;
+  background: #033a56;
+  color: #f8f9fa;
+  width: 30px;
+  height: 30px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 0 3px #f8f9fa;
+}
+
+.story .timeline .circle .circle-title {
+  /* Number Circle Title Aspects */
+  position: absolute;
+  left: 11px;
+  top: -3px;
+}
+
+.story .timeline .timeline-date {
+  /* Story Timeline Data Show */
+  font-size: 13px;
+  opacity: 0.8;
+  color: #033a56;
+}
