@@ -50,6 +50,51 @@ textarea {
 
 /*
 ** =============================
+** == Title Design
+** =============================
+*/
+
+.title { /* Title Main Box */
+    margin: 0 auto;
+    width: fit-content;
+}
+  
+.title h3 { /* Title Header */
+    color: #033a56;
+}
+
+.title .decoration {  /* Title Line Parent */
+    position: relative;
+    width: 100%;
+}
+
+.title .decoration .upline,
+.title .decoration .downline { /* Title Up & Down Lines Shared Props */
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 3px;
+    background: #033a56;
+}
+
+.title .decoration .downline { /* Title DownLine Props */
+    width: 80%;
+    margin: 0 auto 0;
+}
+
+.title .decoration .icon { /* Title Shape Props */
+    position: absolute;
+    top: -6px;
+    left: 48%;
+    width: 20px;
+    height: 20px;
+    background: #033a56;
+    border: 3px solid snow;
+    transform: rotate(45deg) translate3d(0, 0, 0);
+}
+  
+/*
+** =============================
 ** == Header Rules
 ** =============================
 */
