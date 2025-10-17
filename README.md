@@ -9,3 +9,4 @@ Whether you’re looking for a developer to build a professional website or a pa
 
 ## Project Overview
 
+<img style="margin: 0 50%" width="626" height="447" alt="OsamaGeniusDemo" src="https://github.com/user-attachments/assets/6c754a33-2b98-47f6-a6fa-1fc8395a583b" />
