@@ -120,8 +120,8 @@ textarea {
 .header-small {
   /* Main Headers Shared Props */
   position: relative;
-  background: linear-gradient(145deg, #082838a9 10%, #08283860 90%),
-    url("../imgs/cover.png");
+  background: linear-gradient(145deg, #08283860 10%, #08283840 90%),
+    url("../imgs/co02.png");
   background-size: cover;
   background-position: center center;
   width: 100%;
