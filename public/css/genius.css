@@ -59,6 +59,18 @@ textarea {
   background: #ffcc00;
 }
 
+.op-0 {
+  opacity: 0 !important;
+}
+
+.op-half {
+  opacity: 0.5 !important;
+}
+
+.op-none {
+  opacity: 1 !important;
+}
+
 /*
 ** =============================
 ** == Title Design
@@ -283,39 +295,62 @@ textarea {
   filter: grayscale(50%);
 }
 
-.skills label {
-  /* Hide The Progress Bar Upper Label [ Percentage Label ] */
-  display: none;
-}
-
 .skills .progress-label {
   /* The Hidden Label Aspects [ Percentage Label ] */
   position: absolute;
-  left: 0;
-  top: -22px;
-  background-color: #ff000090;
-  color: red;
-  padding: 3px;
-  border-radius: 10px;
-  font-size: 14px;
+  transition: 
+              width .8s ease-in-out,
+              opacity .5s ease,
+              background-color .3s ease-in-out;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
   text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-35px);
 }
 
-.skills .progress-label::after {
+.skills .progress-label::before {
   /* The Hidden Label Aspects [ Percentage Label ] */
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: #ff000050;
   position: absolute;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: inherit;
   transform: rotate(45deg);
-  right: 6px;
-  top: 16px;
+  z-index: -1;
+  left: 6px;
+  top: 14.5px;
+}
+
+.skills .progress-label-bounce {
+  animation: progress-label-bounce 0.5s ease-in-out forwards;
+}
+
+@keyframes progress-label-bounce {
+  0% {
+    transform: translateX(-50%) translateY(-35px); 
+  }
+  25% {
+    transform: translateX(-50%) translateY(-30px); 
+  }
+  50% {
+    transform: translateX(-50%) translateY(-33px); 
+  }
+  100% {
+    transform: translateX(-50%) translateY(-35px); 
+  }
 }
 
 .skills .progress {
   /* Progress Bar Aspects */
-  height: 20px;
+  height: 16px;
+  line-height: 16px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 0 5px -1px #006699ae;
