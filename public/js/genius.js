@@ -70,6 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 observer.unobserve(el.target); // run once
             } else {}
         });
+    }, {
+        threshold: 0.5
     });
     progress.forEach((bar, i) => {
         observer.observe(bar)
