@@ -71,6 +71,17 @@ textarea {
   opacity: 1 !important;
 }
 
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.3s ease-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*
 ** =============================
 ** == Title Design
@@ -390,6 +401,35 @@ textarea {
   border-radius: 50%;
   text-align: center;
   box-shadow: 0 0 0 3px #f8f9fa;
+  opacity: 0;
+  transition: width 0.5s ease-in-out, 
+              height 0.5s ease-in-out,
+              top 0.5s ease-in-out,
+              opacity 0.8s ease-in-out;
+}
+
+.story .timeline .circle.show {
+  animation: outline-circle 0.5s ease-in-out 0.5s forwards;
+}
+
+@keyframes outline-circle {
+  0% {
+    box-shadow: 0 0 0 0 #f8f9fa; 
+    top: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    box-shadow: 0 0 0 3px #f8f9fa; 
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
 }
 
 .story .timeline .circle .circle-title {
@@ -397,6 +437,17 @@ textarea {
   position: absolute;
   left: 11px;
   top: -3px;
+  opacity: 0;
+  animation: circle-title-show 0.3s ease-in-out .5s forwards;
+}
+
+@keyframes circle-title-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .story .timeline .timeline-date {
