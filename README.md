@@ -13,7 +13,7 @@ Whether you’re looking for a developer to build a professional website or a pa
 ## Technologies Used
 - Bootstrap Framework
 - OsamaGenius Style
-- No Javascript appled yet
+- OsamaGenius script
 
 ### Note
 This template for demo propuses only the full project I will upload it letter on with all it's aspects, and this design is not the final one.
