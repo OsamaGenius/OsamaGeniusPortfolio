@@ -8,7 +8,7 @@ Explore past work, discover the skills I’ve acquired, and see how I can turn i
 Whether you’re looking for a developer to build a professional website or a partner to develop a digital project, this portfolio reflects my commitment to creativity and quality in every detail of my work.
 
 ## Project Overview
-<img width="1024" height="760" alt="OsamaGeniusDemo" src="https://github.com/user-attachments/assets/6c754a33-2b98-47f6-a6fa-1fc8395a583b" />
+<img width="980" height="900" alt="OsamaGeniusDemo" src="https://github.com/user-attachments/assets/89e72e5d-bb93-40da-a81b-0791dbb71a86" />
 
 ## Technologies Used
 - Bootstrap Framework
